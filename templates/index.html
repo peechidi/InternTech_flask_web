@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap">
+    <title>InternTech</title>
+</head>
+<body>
+     <!-- START OF NAVBAR -->
+        <nav class="navbar">
+            <div class="brand-title">INTERNTECH</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+            </ul>
+        </div>
+        </nav>
+     <!-- END OF NAVBAR -->
+
+     <!-- START OF JUMBOTRON -->
+    <section class="Jumbotron">
+    <div class="Jumbotron-content">
+        
+    <!-- <img src="./static/images/Jumbotron.jfif" width="80%" height="10%" /> -->
+</div>
+</section>
+<section id='About' class="welcome-section">
+    <h1 class="welcome">Welcome to InternTech</h1>
+    <p>Handshake Your Future by finding your internship</p>
+    <p>Build connections, gain knowledge, and watch your career take off. Find an internship that allows you to learn from experienced professionals and network with industry leaders.
+    </p>
+    <p>We connect interns in the tech ecosystem to their dream internship firm. Start by Signing Up, You can sign up as an intern or as in internship firm. You are just one click away!</p>
+    <div class="button-container">
+        <button class="center-button"><a href="{{ url_for('signup') }}">SIGN UP</a></button>
+    </div>
+</section>
+     <!-- END OF JUMBOTRON -->
+     
+     <!-- START OF SKILL SECTIONS -->
+<section class="skills">
+<h3 class="skills=heading">Skills In Focus</h3>
+<ul>
+    <li class="skills=body">AI/Machine Learning</li>
+    <li class="skills=body">Animation</li>
+    <li class="skills=body">Cloud Computing</li>
+    <li class="skills=body">Cybersecurity</li>
+    <li class="skills=body">Data Analysis and Visualisation</li>
+    <li class="skills=body">Data Science</li>
+    <li class="skills=body">Dev Ops</li>
+    <li class="skills=body">Game Development</li>
+    <li class="skills=body">Product Management</li>
+    <li class="skills=body">Quality Assurance</li>
+    <li class="skills=body">Software Development</li>
+    <li class="skills=body">UI/UX Design</li>
+</ul>
+</section>
+     <!-- END OF SKILL SECTIONS -->
+
+     <!-- START OF TESTIMONIAL SECTION -->
+
+<section class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-slide active">
+            <img src="{{ url_for('static', filename='images/person1.jfif') }}" alt="Testimonial 1" >
+            <p> I Launched my career alongside a diverse team of interns. <br /> I Gained valuable experience in a modern work environment while building connections and shaping my future. I Collaborated, Connected, and Grew. </p>
+        </div>
+        <div class="carousel-slide">
+            <img src="{{ url_for('static', filename='images/person2.jpeg') }}" alt="Testimonial 2">
+            <p>I Landed my our Dream Internship with Interntech. <br /> I Confidently took the first step towards your career goals. I Found an internship that matches my passion and explored exciting opportunities in a vibrant city</p>
+        </div>
+        <div class="carousel-slide">
+            <img src="{{ url_for('static', filename='images/person3.jpeg') }}" alt="Testimonial 3">
+            <p>Simply the best experience ever!<br /> I was glad to be part of a team that achieves amazing things. I Found an internship where I can collaborate, learn, and celebrate successes together
+            </p>
+        </div>
+    </div>
+    <button class="carousel-prev">&#10094;</button>
+    <button class="carousel-next">&#10095;</button>
+</section>
+     <!-- START OF TESTIMONIAL SECTION -->
+
+     <!-- START OF FOOTER SECTION -->
+<footer class="footer">
+    <div class="footer-content">
+        <div id='Contact' class="footer-section contact">
+            <h2>Contact Info</h2>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> 123 Street Name, City, Country</li>
+                <li><i class="fas fa-phone"></i> +1 (234) 567-890</li>
+                <li><i class="fas fa-envelope"></i> info@example.com</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 InternTech | Designed by Precious Chidi-Obinichi
+    </div>
+</footer>
+     <!-- END OF FOOTER SECTION -->
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

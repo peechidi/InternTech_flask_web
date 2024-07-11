@@ -1,0 +1,319 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f0f0f0;
+    /* background-color: #FF6347; */
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+}
+h1 {
+    font-size: 2.5rem; /* 40px */
+}
+
+h2 {
+    font-size: 2rem; /* 32px */
+}
+
+h3 {
+    font-size: 1.75rem; /* 28px */
+}
+p, li, a, span, div {
+    font-size: 1rem; /* 16px */
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    position: relative;
+   z-index: 1000;
+}
+.brand-title{
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #2E8B57;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.navbar-links {
+    display: flex;
+}
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navbar-links li {
+    margin: 0 1rem;
+}
+.navbar-links a { 
+    text-decoration: none;
+    color: #FF6347;
+}
+.navbar-links a:hover {
+    color:#2E8B57;
+    background-color: #fff;
+}
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #FF6347;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.Jumbotron {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url('../images/Jumbotron.jfif');
+    background-size: cover;
+}
+.welcome-section {
+    /* background-color: #2E8B57; */
+    padding: 0 10px;
+    margin: 3.5rem 1rem 0 1rem;
+    
+}
+.welcome {
+    text-align: center;
+    color: #2E8B57;
+}
+.button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    height: 100%; /* Adjust as needed */
+   margin: 10%;
+}
+
+.center-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2E8B57;
+    border: 1px solid #FF6347;
+    border-radius: 10%;
+    
+}
+button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+button a:hover, .center-button:hover {
+    color: #2E8B57;
+    background-color: #fff;
+    border-radius: 30%;
+}
+.skills {
+    display: flex;
+    justify-content: center;
+    /* margin: 1rem 0 1rem 0; */
+}
+h3 {
+    color: #2E8B57;
+    
+}
+section li{
+    color: #FF6347;
+    margin-bottom: 1rem;
+    
+}
+.carousel {
+    position: relative;
+    max-width: 500px;
+    /* max-height: 500px; */
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #2E8B57;
+}
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+.carousel-slide img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+.carousel-slide p {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    background-color: #fff;
+    color: #FF6347;
+}
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #2E8B57;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+}
+.carousel-prev {
+    left: 0;
+}
+
+.carousel-next {
+    right: 0;
+}
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: #2E8B57;
+    color: white;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #475563; /* Primary Color */
+    color: #FFFFFF; /* Secondary Color */
+    padding: 2rem 0;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.footer-section {
+    flex: 1;
+    margin: 0 1rem;
+}
+.footer-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2E8B57; /* Accent Color */
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    list-style: none;
+    color: #E6ECF0; /* Light Gray */
+}
+.footer-section ul {
+    padding: 0;
+}
+
+.footer-section li {
+    display: flex;
+    align-items: center;
+}
+
+.footer-section li i {
+    margin-right: 0.5rem;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #2E8B57; /* Accent Color */
+    color: #E6ECF0; /* Light Gray */
+}
+
+/* Icons */
+.footer-section i {
+    font-size: 1.25rem;
+    color: #2E8B57; /* Accent Color */
+}
+
+
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        width: 100%;
+        /* background-color: #ffffff; */
+        flex-direction: column;
+        position: absolute;
+        top: 56px; /* Height of the navbar */
+        left: 0;
+    }
+    
+    .navbar-links ul {
+        flex-direction: column;
+    }
+    
+    .navbar-links li {
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+    
+    .toggle-button {
+        display: flex;
+    }
+
+.navbar-links.active {
+    display: flex;
+    justify-content: center;
+}
+.navbar-links.active:hover {
+    color: #FF6347;
+}
+.navbar-links.active ul {
+    animation: fadeIn 0.5s ease-in-out;
+    
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.toggle-button.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.toggle-button.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.toggle-button.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* body.menu-active {
+    padding-top: 300px;
+    transition: padding-bottom 0.3s ease-in-out;
+} */
+.footer-content {
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-section {
+    margin: 1rem 0;
+}
+}
+@media (min-width: 1200px) {
+    .Jumbotron {
+        height: 90vh; /* Adjust height for larger screens */
+    }
+}
+
+@media (min-width: 1600px) {
+    .Jumbotron {
+        height: 100vh; /* Adjust height for even larger screens */
+    }
+}
